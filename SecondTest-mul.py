@@ -11,7 +11,7 @@ client = OpenAI(
     base_url=""
 )
 
-# ========== 文件路径配置 ==========
+# ========== Basic Settings ==========
 standard_file = r"vision_100.jsonl"
 student_file = r"answer-vision.jsonl"
 image_base_path = r"image_file"
@@ -140,3 +140,4 @@ with open(output_file, "w", encoding="utf-8") as f:
 acc = correct_count / len(results) if results else 0
 print(f"\n✅ Accuracy: {acc:.2%} ({correct_count}/{len(results)})")
 print(f"✅ Results saved to: {output_file}")
+
