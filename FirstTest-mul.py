@@ -11,7 +11,7 @@ client = OpenAI(
     base_url=""
 )
 
-# ========== 文件路径配置 ==========
+# ========== Basic Settings ==========
 input_path = r"vision_100.jsonl"
 output_path = r"answer-vision-100"
 image_base_path = r"image_file"
@@ -100,3 +100,4 @@ with open(input_path, "r", encoding="utf-8") as infile, open(output_path, "w", e
         outfile.write(json.dumps(data, ensure_ascii=False) + "\n")
 
 print(f"\n✅ All problems have been processed, and the output has been written to: {output_path}")
+
